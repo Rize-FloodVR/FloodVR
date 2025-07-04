@@ -21,6 +21,34 @@ main
 - 주요 변경 내용
 ```
 
+## 📚 예시
+
+### 제목 예시
+
+bash
+
+```bash
+feat: 플레이어 점프 시스템 구현
+fix: NullReferenceException in PlayerController
+refactor: 인벤토리 시스템 코드 정리
+art: 캐릭터 애니메이션 추가
+scene: 메인 메뉴 UI 레이아웃 수정
+perf: 오브젝트 풀링으로 메모리 최적화
+config: Android 빌드 설정 최적화
+```
+
+### 상세 설명이 포함된 예시
+
+bash
+
+```bash
+feat: Enemy AI 상태머신 패턴 적용
+- State 인터페이스 구현
+- Idle, Chase, Attack 상태 분리  
+- 상태 전환 로직 개선
+- 디버그용 상태 표시 UI 추가
+```
+
 ### 🏷️ 커밋 타입 분류
 
 | 타입 | 설명 | 예시 |
@@ -37,6 +65,8 @@ main
 | 📝 docs | 문서 작성/수정 | docs: README 파일 업데이트 |
 | ⚙️ config | 프로젝트 설정 변경 | config: Build Settings 플랫폼 추가 |
 | 🛠️ chore | 프로젝트 관리 작업 | chore: 사용하지 않는 에셋 제거 |
+
+
 
 ## 🎯 Unity C# 네이밍 컨벤션
 
@@ -124,3 +154,5 @@ public Sprite playerSprite;
 public AudioClip jumpSound;
 public Material playerMaterial;
 ```
+
+
