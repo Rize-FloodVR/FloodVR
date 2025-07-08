@@ -3,11 +3,11 @@
 ## 👥 브랜치 구조
 ```
 main
-├── develop
-├── soohyeon      
-├── minji       
-├── taehan       
-└── seungwoo      
+└── develop
+   ├── dev/soohyeon      
+   ├── dev/minji       
+   ├── dev/taehan       
+   └── dev/seungwoo     
 ```
 
 ## 📝 커밋 메시지 가이드라인
