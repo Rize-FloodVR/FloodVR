@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 239e05b5173ba654fbbf0e2952318fd4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Example/Physics/PinPonMaterial.physicMaterial
+  uploadId: 525773

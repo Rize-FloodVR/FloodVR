@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 69fc19e79486b6b43b63ecd993cf8e88
+timeCreated: 1523321544
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116287
+  packageName: Heavy rain vfx
+  packageVersion: 1.0
+  assetPath: Assets/Heavy rain vfx/prefab/rain.prefab
+  uploadId: 240091

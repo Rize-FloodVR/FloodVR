@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bdd24f4e3562a6e4ebbd8f9f629fd9d9
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleXR/Scripts/Extensions/TransformExtensions.cs
+  uploadId: 525773

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 3b02f1237011fde45902289a05e52bb7
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleXR/Scripts/XRAvatarController.cs
+  uploadId: 525773

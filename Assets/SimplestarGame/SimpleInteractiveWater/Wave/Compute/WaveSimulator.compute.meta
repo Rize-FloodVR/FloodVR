@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbea3033eb9ece04bb2265be5944636d
+ComputeShaderImporter:
+  externalObjects: {}
+  currentAPIMask: 4
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Wave/Compute/WaveSimulator.compute
+  uploadId: 525773

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 725c9b769d6bc114b8a6c0f18ab30172
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Water/URP/3.0/SimpleWaterURP_3.0.mat
+  uploadId: 525773

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: a56a8a46c04496c4599b87ff91aefc77
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Wave/Editor/Scripts/WaveMaskGeneratorEditor.cs
+  uploadId: 525773

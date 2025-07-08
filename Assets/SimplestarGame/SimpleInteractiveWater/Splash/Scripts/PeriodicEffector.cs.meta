@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: bd5334d4a961af24282e449a5aa7f76c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Splash/Scripts/PeriodicEffector.cs
+  uploadId: 525773

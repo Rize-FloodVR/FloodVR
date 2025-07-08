@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 06160979e5476fb4c9dee4ca1ee3d463
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Gravity/Scripts/GravityReceiver.cs
+  uploadId: 525773

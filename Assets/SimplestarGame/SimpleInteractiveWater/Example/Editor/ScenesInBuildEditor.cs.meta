@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f542c5de72e7d4e4fa407b4b1b0e6338
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Example/Editor/ScenesInBuildEditor.cs
+  uploadId: 525773

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: f0bb66dc84ca86547901b177530d6c86
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Water/URP/3.0/SimpleWaterURP_3.0.shadergraph
+  uploadId: 525773

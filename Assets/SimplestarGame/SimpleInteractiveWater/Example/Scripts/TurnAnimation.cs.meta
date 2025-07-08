@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2ea6a1b8d7c3c854385d1513d7846170
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Example/Scripts/TurnAnimation.cs
+  uploadId: 525773

@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: eab110e546e4a294c9a7a0f04d878e92
+timeCreated: 1523309834
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 116287
+  packageName: Heavy rain vfx
+  packageVersion: 1.0
+  assetPath: Assets/Heavy rain vfx/Materials/rain.mat
+  uploadId: 240091

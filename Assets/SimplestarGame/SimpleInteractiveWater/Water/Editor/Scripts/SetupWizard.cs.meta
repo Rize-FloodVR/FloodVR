@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7b4ce2cf48bce9d4ea7c00e3fc11d1ed
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Water/Editor/Scripts/SetupWizard.cs
+  uploadId: 525773

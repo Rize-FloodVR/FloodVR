@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7dd280032aa87474ba70c77240da20e2
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 162033
+  packageName: Simple Interactive Water
+  packageVersion: 3.0.2
+  assetPath: Assets/SimplestarGame/SimpleInteractiveWater/Prefabs/URP/QuadPlane3.0_URP.prefab
+  uploadId: 525773

@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d8989a4eeb8e4b048a468d656d9c9d86
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 301666
+  packageName: Particle Water Shader Pro - URP
+  packageVersion: 1.0.2
+  assetPath: Assets/Particle Water Shader URP Pro 2024/Scripts/SSF_LoadParticlesFromParticleSystem.cs
+  uploadId: 760330
