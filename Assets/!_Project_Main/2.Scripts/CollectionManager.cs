@@ -4,12 +4,12 @@ public class CollectionManager : MonoBehaviour
 {
 public static CollectionManager Instance;
 
-    public bool hasWallet = false;
-    public bool hasFlashlight = false;
-    public bool hasLaptop = false;
-    public bool hasSmartphone = false;
+    private bool hasWallet = false;
+    private bool hasFlashlight = false;
+    private bool hasLaptop = false;
+    private bool hasSmartphone = false;
     
-    public bool AllItemsCollected => hasWallet && hasFlashlight && hasLaptop && hasSmartphone;
+    private bool AllItemsCollected => hasWallet && hasFlashlight && hasLaptop && hasSmartphone;
     
     void Awake()
     {
