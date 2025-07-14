@@ -26,12 +26,9 @@ public class DoorHandleInteractable : MonoBehaviour
     
     private void OnHandleActivated(SelectEnterEventArgs args)
     {
-        // 문 토글
         if (doorController != null)
         {
             doorController.ToggleDoor();
         }
-        
-        Debug.Log("도어 핸들 활성화");
     }
 }
