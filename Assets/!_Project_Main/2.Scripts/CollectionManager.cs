@@ -31,22 +31,22 @@ public static CollectionManager Instance;
         {
             case ItemType.Wallet:
                 hasWallet = true;
-                Debug.Log("지갑 수집!");
+                Debug.Log("지갑 수집");
                 break;
                 
             case ItemType.Flashlight:
                 hasFlashlight = true;
-                Debug.Log("손전등 수집!");
+                Debug.Log("손전등 수집");
                 break;
                 
             case ItemType.Laptop:
                 hasLaptop = true;
-                Debug.Log("랩탑 수집!");
+                Debug.Log("랩탑 수집");
                 break;
                 
             case ItemType.Smartphone:
                 hasSmartphone = true;
-                Debug.Log("스마트폰 수집!");
+                Debug.Log("스마트폰 수집");
                 break;
         }
         
@@ -64,7 +64,7 @@ public static CollectionManager Instance;
     
     void OnAllItemsCollected()
     {
-        // 모든 아이템 수집 완료 시 처리(문 열림?)
+        // 모든 아이템 수집 완료 시 처리
     }
     
     public bool IsItemCollected(ItemType itemType)

@@ -32,15 +32,16 @@ public class CollectibleItem : MonoBehaviour
     
     void Update()
     {
+        
         if (isGrabbed && !inputProcessed)
         {
-            // 키보드 입력 (테스트용)
+            // 시뮬레이터용 임시 코드. G를 눌러 그랩된 상태에서 C를 누리면 아이템 수집됨
             if (Input.GetKeyDown(KeyCode.C))
             {
                 CollectItem();
                 return;
             }
-            
+
             // 컨트롤러 입력 확인
             if (CheckControllerInput())
             {
@@ -73,7 +74,8 @@ public class CollectibleItem : MonoBehaviour
     
     void CollectItem()
     {
-        inputProcessed = true; // 중복 수집 방지
+        inputProcessed = true;
+         
         Debug.Log($"{itemType} 수집 완료!");
         CollectionManager.Instance.CollectItem(itemType);
         Destroy(gameObject);
