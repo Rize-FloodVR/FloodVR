@@ -1,21 +1,24 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class DoorHandleInteractable : MonoBehaviour
 {
     [SerializeField] private DoorController doorController;
     public CollectionManager collectionManager;
+    public GameObject roomDoor;
 
-    private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable simpleInteractable;
-    
+    private XRSimpleInteractable simpleInteractable;
+
+
     void Start()
     {
         collectionManager = CollectionManager.Instance;
-        simpleInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
+        simpleInteractable = GetComponent<XRSimpleInteractable>();
         
         if (simpleInteractable == null)
         {
-            simpleInteractable = gameObject.AddComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable>();
+            simpleInteractable = gameObject.AddComponent<XRSimpleInteractable>();
         }
         
         simpleInteractable.selectEntered.AddListener(OnHandleActivated);
@@ -26,9 +29,24 @@ public class DoorHandleInteractable : MonoBehaviour
     }
     private void OnHandleActivated(SelectEnterEventArgs args)
     {
-        if (doorController != null && collectionManager.AllItemsCollected)
+        // Debug.Log(args.interactableObject.ToString());
+
+        GameObject obj = args.interactableObject.transform.gameObject;
+        GameObject objj = obj.transform.root.gameObject;
+        Debug.Log(objj);
+        // Debug.Log(objj.name == roomDoor.name);
+
+        if (doorController != null)
         {
-            doorController.ToggleDoor();
+            if(collectionManager.AllItemsCollected || objj == roomDoor)
+            {
+                doorController.ToggleDoor();
+            }
         }
+
+        //if (doorController != null && collectionManager.AllItemsCollected)
+        //{
+        //    doorController.ToggleDoor();
+        //}
     }
 }

@@ -48,7 +48,7 @@ public class DoorController : MonoBehaviour
             isAnimating = false;
         }
     }
-    
+
     public bool IsOpen => isOpen;
     public bool IsAnimating => isAnimating;
 }

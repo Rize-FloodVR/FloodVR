@@ -66,7 +66,7 @@ public class CollectibleItem : MonoBehaviour
         {
             leftController.TryGetFeatureValue(CommonUsages.triggerButton, out leftTrigger);
         }
-        
+
         return rightTrigger || leftTrigger;
     }
     
