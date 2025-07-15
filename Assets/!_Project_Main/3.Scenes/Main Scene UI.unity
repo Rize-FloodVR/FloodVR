@@ -1951,6 +1951,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorController: {fileID: 0}
+  collectionManager: {fileID: 0}
 --- !u!4 &562235924 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466134531392680144, guid: 7076e8bc57af4294aa0434b988182b41, type: 3}
@@ -2226,6 +2227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorController: {fileID: 2018813229}
+  collectionManager: {fileID: 0}
 --- !u!114 &661182692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2994,6 +2996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorController: {fileID: 74027340}
+  collectionManager: {fileID: 0}
 --- !u!65 &954842648
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3112,7 +3115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &973028572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3562,7 +3565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: -876546973899608171, guid: 8c39b581f9993754392cbe064f14734f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 0.392}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -4671,7 +4674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1652488126
 Transform:
   m_ObjectHideFlags: 0
@@ -5035,6 +5038,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa7be32c92c243d290703df912a9167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  hasWallet: 0
+  hasFlashlight: 0
+  hasLaptop: 0
+  hasSmartphone: 0
 --- !u!4 &1796842877
 Transform:
   m_ObjectHideFlags: 0
