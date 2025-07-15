@@ -70,7 +70,9 @@ public class ElectricSwitchController : MonoBehaviour
             {
                 simpleInteractable.enabled = false;
             }
-            
+
+            SafetyStepManager.Instance?.SetElectricOff();
+
             SafetyInteractionController safetyController = FindAnyObjectByType<SafetyInteractionController>();
             if (safetyController != null)
             {
