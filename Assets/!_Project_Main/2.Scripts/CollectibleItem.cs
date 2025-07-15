@@ -32,7 +32,6 @@ public class CollectibleItem : MonoBehaviour
     
     void Update()
     {
-        
         if (isGrabbed && !inputProcessed)
         {
             // 시뮬레이터용 임시 코드. G를 눌러 그랩된 상태에서 C를 누리면 아이템 수집됨
@@ -41,7 +40,6 @@ public class CollectibleItem : MonoBehaviour
                 CollectItem();
                 return;
             }
-
             // 컨트롤러 입력 확인
             if (CheckControllerInput())
             {
