@@ -59,6 +59,11 @@ public class GasValveController : MonoBehaviour
     
     private void OnValveActivated(SelectEnterEventArgs args)
     {
+        if (!SafetyStepManager.Instance.IsElectricOff)
+        {
+            Debug.Log("⚠ 전기를 먼저 차단해야 가스밸브를 잠글 수 있습니다!");
+            return;
+        }
         ToggleValve();
     }
     

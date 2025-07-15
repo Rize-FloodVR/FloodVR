@@ -2,18 +2,17 @@ using UnityEngine;
 
 public class CollectionManager : MonoBehaviour
 {
-public static CollectionManager Instance;
+    public static CollectionManager Instance { get; private set; }
 
-    private bool hasWallet = false;
-    private bool hasFlashlight = false;
-    private bool hasLaptop = false;
-    private bool hasSmartphone = false;
-    
-    private bool AllItemsCollected => hasWallet && hasFlashlight && hasLaptop && hasSmartphone;
-    
+    public bool hasWallet = false;
+    public bool hasFlashlight = false;
+    public bool hasLaptop = false;
+    public bool hasSmartphone = false;
+
+    public bool AllItemsCollected => hasWallet && hasFlashlight && hasLaptop && hasSmartphone;
+
     void Awake()
     {
-
         if (Instance == null)
         {
             Instance = this;
@@ -24,7 +23,7 @@ public static CollectionManager Instance;
             Destroy(gameObject);
         }
     }
-    
+
     public void CollectItem(ItemType itemType)
     {
         switch (itemType)
@@ -33,26 +32,26 @@ public static CollectionManager Instance;
                 hasWallet = true;
                 Debug.Log("지갑 수집");
                 break;
-                
+
             case ItemType.Flashlight:
                 hasFlashlight = true;
                 Debug.Log("손전등 수집");
                 break;
-                
+
             case ItemType.Laptop:
                 hasLaptop = true;
                 Debug.Log("랩탑 수집");
                 break;
-                
+
             case ItemType.Smartphone:
                 hasSmartphone = true;
                 Debug.Log("스마트폰 수집");
                 break;
         }
-        
+
         CheckCollectionComplete();
     }
-    
+
     void CheckCollectionComplete()
     {
         if (AllItemsCollected)
@@ -61,12 +60,16 @@ public static CollectionManager Instance;
             OnAllItemsCollected();
         }
     }
-    
+
     void OnAllItemsCollected()
     {
-        // 모든 아이템 수집 완료 시 처리
+        Debug.Log("모든 아이템을 모았습니다. 이제 문을 열 수 있습니다!");
+        // 자동으로 열지 않음! XR에서 수동으로 열도록 놔둠
     }
-    
+
+
+
+
     public bool IsItemCollected(ItemType itemType)
     {
         return itemType switch
