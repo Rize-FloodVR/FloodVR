@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5412504730409214236, guid: b694b8ec5c41f6247843a2b67222fda6, type: 3}
+      propertyPath: collectSound
+      value: 
+      objectReference: {fileID: 8300000, guid: cff023e96d52e2c41abeb8028cf9a85e, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1378,6 +1382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 3
+  collectSound: {fileID: 8300000, guid: cff023e96d52e2c41abeb8028cf9a85e, type: 3}
 --- !u!65 &346219737
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2019,6 +2024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveDistance: 0.25
   animationSpeed: 1
+  switchSound: {fileID: 8300000, guid: 3f5147fdbf43a54498918447b6748627, type: 3}
 --- !u!114 &420629070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3344,6 +3350,7 @@ MonoBehaviour:
   valveTransform: {fileID: 700817622}
   rotationAngle: 90
   animationSpeed: 1
+  valveCloseSound: {fileID: 8300000, guid: 016f56a2937b1824ea900d28aea9706c, type: 3}
 --- !u!4 &749172041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466134531392680144, guid: 7076e8bc57af4294aa0434b988182b41, type: 3}
@@ -6381,6 +6388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 2
+  collectSound: {fileID: 8300000, guid: cff023e96d52e2c41abeb8028cf9a85e, type: 3}
 --- !u!114 &1807984224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160193,6 +160201,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 0
+  collectSound: {fileID: 8300000, guid: cff023e96d52e2c41abeb8028cf9a85e, type: 3}
 --- !u!114 &3469287837856767932
 MonoBehaviour:
   m_ObjectHideFlags: 0
