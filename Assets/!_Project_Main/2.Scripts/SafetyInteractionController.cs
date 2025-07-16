@@ -38,7 +38,9 @@ public class SafetyInteractionController : MonoBehaviour
     {
         isElectricSwitchOff = !isSwitchOn;
         safetyStates["ElectricSwitch"] = isElectricSwitchOff;
-        
+        if (MissionStepManager.Instance.CurrentStep == MissionStep.Electric)
+            MissionStepManager.Instance.NextStep();
+
         Debug.Log($"전기차단기 내려감");
         
         OnElectricSwitchChanged?.Invoke(isElectricSwitchOff);
@@ -51,7 +53,9 @@ public class SafetyInteractionController : MonoBehaviour
         safetyStates["GasValve"] = isGasValveClosed;
         
         Debug.Log($"가스밸브 잠김");
-        
+        if (MissionStepManager.Instance.CurrentStep == MissionStep.Gas)
+            MissionStepManager.Instance.NextStep();
+
         OnGasValveChanged?.Invoke(isGasValveClosed);
         CheckSafetyCompletion();
     }
@@ -79,6 +83,8 @@ public class SafetyInteractionController : MonoBehaviour
         if (isCompleted)
         {
             Debug.Log($"모든 완전 조치 완료 ({GetCompletedActionsCount()}/{safetyStates.Count})");
+            if (MissionStepManager.Instance.CurrentStep == MissionStep.Complete)
+                MissionStepManager.Instance.NextStep();
             OnAllSafetyActionsCompleted?.Invoke();
         }
     }
