@@ -13,7 +13,10 @@ public class ElectricSwitchController : MonoBehaviour
     private bool isDisabled = false;
     private Vector3 onPosition;
     private Vector3 offPosition;
-    
+
+    [SerializeField] private AudioClip switchSound;
+
+
     public bool IsSwitchOn => isSwitchOn;
     public bool IsAnimating => isAnimating;
     public bool IsDisabled => isDisabled;
@@ -63,9 +66,13 @@ public class ElectricSwitchController : MonoBehaviour
         {
             isSwitchOn = false;
             isAnimating = true;
-            isDisabled = true; 
-            
-            
+            isDisabled = true;
+
+            if (switchSound != null)
+            {
+                AudioSource.PlayClipAtPoint(switchSound, transform.position);
+            }
+
             if (simpleInteractable != null)
             {
                 simpleInteractable.enabled = false;
