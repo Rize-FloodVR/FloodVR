@@ -38,6 +38,9 @@ public class WaterRiseController : MonoBehaviour
             if (waterUI != null)
                 waterUI.SetWaterLevel(ratio, riseHeight * ratio);
 
+            
         }
     }
+
+    
 }

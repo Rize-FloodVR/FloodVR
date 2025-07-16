@@ -7,7 +7,9 @@ public class GasValveController : MonoBehaviour
     [SerializeField] private float rotationAngle = 90f;
     [SerializeField] private float animationSpeed = 1f;
     private Vector3 rotationAxis = Vector3.left;
-    
+
+    [SerializeField] private AudioClip valveCloseSound;
+
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRSimpleInteractable simpleInteractable;
     
     private bool isValveOpen = true;
@@ -76,7 +78,13 @@ public class GasValveController : MonoBehaviour
             isValveOpen = false;
             isAnimating = true;
             isDisabled = true;
-            
+
+            if (valveCloseSound != null)
+            {
+                AudioSource.PlayClipAtPoint(valveCloseSound, transform.position);
+            }
+
+
             Debug.Log("가스밸브 닫힘 - 더 이상 조작할 수 없습니다");
             
             if (simpleInteractable != null)

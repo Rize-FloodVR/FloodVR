@@ -8,7 +8,10 @@ public class CollectibleItem : MonoBehaviour
     private UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable grabInteractable;
     private bool isGrabbed = false;
     private bool inputProcessed = false;
-    
+
+    [SerializeField] private AudioClip collectSound; // 수집 사운드
+    private bool collected = false;
+
     void Start()
     {
         grabInteractable = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>();
@@ -69,13 +72,23 @@ public class CollectibleItem : MonoBehaviour
 
         return rightTrigger || leftTrigger;
     }
-    
+
     void CollectItem()
     {
+        if (collected) return;
+        collected = true;
+
         inputProcessed = true;
-         
+
         Debug.Log($"{itemType} 수집 완료!");
         CollectionManager.Instance.CollectItem(itemType);
+
+        
+        if (collectSound != null)
+        {
+            AudioSource.PlayClipAtPoint(collectSound, transform.position);
+        }
+
         Destroy(gameObject);
     }
 }

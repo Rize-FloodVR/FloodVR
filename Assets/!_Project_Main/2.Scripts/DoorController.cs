@@ -7,7 +7,8 @@ public class DoorController : MonoBehaviour
     [SerializeField] private float animationSpeed = 0.8f;
     private bool isOpen = false;
     private bool isAnimating = false;
-    
+    [SerializeField] private AudioClip doorOpenSound;
+
     private float targetAngle = 0f;
     private float startAngle = 0f;
     private Quaternion initialRotation;
@@ -29,7 +30,11 @@ public class DoorController : MonoBehaviour
     public void ToggleDoor()
     {
         if (isAnimating) return;
-        
+        if (doorOpenSound != null)
+        {
+            AudioSource.PlayClipAtPoint(doorOpenSound, transform.position);
+        }
+
         isOpen = !isOpen;
         targetAngle = isOpen ? startAngle - openAngle : startAngle;
         isAnimating = true;
