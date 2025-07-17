@@ -5,7 +5,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactables;
 public class DoorHandleInteractable : MonoBehaviour
 {
     [SerializeField] private DoorController doorController;
-    public CollectionManager collectionManager;
+    //public CollectionManager collectionManager;
     public GameObject roomDoor;
 
     private XRSimpleInteractable simpleInteractable;
@@ -13,7 +13,7 @@ public class DoorHandleInteractable : MonoBehaviour
 
     void Start()
     {
-        collectionManager = CollectionManager.Instance;
+        //collectionManager = CollectionManager.Instance;
         simpleInteractable = GetComponent<XRSimpleInteractable>();
         
         if (simpleInteractable == null)
@@ -38,10 +38,15 @@ public class DoorHandleInteractable : MonoBehaviour
 
         if (doorController != null)
         {
-            if(collectionManager.AllItemsCollected || objj == roomDoor)
+            if(objj == roomDoor)
             {
                 doorController.ToggleDoor();
             }
+
+            //if (collectionManager.AllItemsCollected || objj == roomDoor)
+            //{
+            //    doorController.ToggleDoor();
+            //}
         }
 
         //if (doorController != null && collectionManager.AllItemsCollected)
