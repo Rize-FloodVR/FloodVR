@@ -59,6 +59,8 @@ public class SafetyInteractionController : MonoBehaviour
         OnGasValveChanged?.Invoke(isGasValveClosed);
         CheckSafetyCompletion();
     }
+
+
     
     private void CheckSafetyCompletion()
     {
@@ -83,8 +85,7 @@ public class SafetyInteractionController : MonoBehaviour
         if (isCompleted)
         {
             Debug.Log($"모든 완전 조치 완료 ({GetCompletedActionsCount()}/{safetyStates.Count})");
-            if (MissionStepManager.Instance.CurrentStep == MissionStep.Complete)
-                MissionStepManager.Instance.NextStep();
+
             OnAllSafetyActionsCompleted?.Invoke();
         }
     }
