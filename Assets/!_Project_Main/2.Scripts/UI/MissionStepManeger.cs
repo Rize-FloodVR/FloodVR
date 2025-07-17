@@ -2,6 +2,7 @@ using UnityEngine;
 
 public enum MissionStep
 {
+    Start,          //시작
     Electric,     // 전기 차단
     Gas,          // 가스 차단
     Collect,      // 오브젝트 수집
@@ -19,6 +20,11 @@ public class MissionStepManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
+    }
+
+    private void Start()
+    {
+        OnStepChanged();
     }
 
     // 다음 미션 단계로 이동
@@ -40,7 +46,7 @@ public class MissionStepManager : MonoBehaviour
         switch (CurrentStep)
         {
             case MissionStep.Electric:
-                MissionManager.Instance.ShowPopup("감전 위험 감지됨! 전력 차단이 필요합니다.", 5f);
+                MissionManager.Instance.ShowPopup("침수 경보가 발생했습니다.\n감전 위험 감지! 전력 차단이 필요합니다.", 5f);
                 break;
             case MissionStep.Gas:
                 MissionManager.Instance.ShowPopup("전기 차단 완료!\n가스 누출 위험! 가스밸브를 차단하세요.", 5f);
