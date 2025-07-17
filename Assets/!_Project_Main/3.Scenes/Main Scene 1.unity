@@ -3843,7 +3843,6 @@ GameObject:
   - component: {fileID: 976273023}
   - component: {fileID: 976273026}
   - component: {fileID: 976273025}
-  - component: {fileID: 976273027}
   - component: {fileID: 976273028}
   m_Layer: 0
   m_Name: Safety Step Manager
@@ -3905,18 +3904,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   popupPanel: {fileID: 1230396741}
   messageText: {fileID: 1071684254}
---- !u!114 &976273027
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 976273022}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 595818322f8dca940b930788dcf9841c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &976273028
 MonoBehaviour:
   m_ObjectHideFlags: 0

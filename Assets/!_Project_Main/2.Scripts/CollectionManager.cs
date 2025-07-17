@@ -30,29 +30,25 @@ public class CollectionManager : MonoBehaviour
         {
             case ItemType.Wallet:
                 hasWallet = true;
-                if (ObjectStepManager.Instance.CurrentStep == ObjectStep.Wallet)
-                    ObjectStepManager.Instance.Step();
+                ObjectManager.Instance.ShowPopup("지갑을 수집했습니다!", 3f);
                 Debug.Log("지갑 수집");
                 break;
 
             case ItemType.Flashlight:
                 hasFlashlight = true;
-                if (ObjectStepManager.Instance.CurrentStep == ObjectStep.Flashlight)
-                    ObjectStepManager.Instance.Step();
+                ObjectManager.Instance.ShowPopup("손전등을 수집했습니다!", 3f);
                 Debug.Log("손전등 수집");
                 break;
 
             case ItemType.Laptop:
                 hasLaptop = true;
-                if (ObjectStepManager.Instance.CurrentStep == ObjectStep.Laptop)
-                    ObjectStepManager.Instance.Step();
+                ObjectManager.Instance.ShowPopup("노트북을 수집했습니다!", 3f);
                 Debug.Log("랩탑 수집");
                 break;
 
             case ItemType.Smartphone:
                 hasSmartphone = true;
-                if (ObjectStepManager.Instance.CurrentStep == ObjectStep.Phone)
-                    ObjectStepManager.Instance.Step();
+                ObjectManager.Instance.ShowPopup("스마트폰을 수집했습니다!", 3f);
                 Debug.Log("스마트폰 수집");
                 break;
         }
