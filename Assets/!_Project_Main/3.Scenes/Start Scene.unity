@@ -4322,7 +4322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fecd563fd365814fa4d7b6c5f18dcab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: Main Scene
+  nextSceneName: Main Scene 1
 --- !u!114 &976273026
 MonoBehaviour:
   m_ObjectHideFlags: 0

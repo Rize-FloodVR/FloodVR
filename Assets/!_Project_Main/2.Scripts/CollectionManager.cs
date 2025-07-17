@@ -57,6 +57,8 @@ public class CollectionManager : MonoBehaviour
         if (AllItemsCollected)
         {
             Debug.Log("모든 아이템 수집 완료");
+            if (MissionStepManager.Instance.CurrentStep == MissionStep.Escape)
+                MissionStepManager.Instance.NextStep();
             OnAllItemsCollected();
         }
     }
