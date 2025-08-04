@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/ThirdParty/HurricaneVR/TechDemo/Scenes/scene_demo.unity
     guid: fe84c7f8bf6cde94c9b6c27f52ac4875
   - enabled: 1
-    path: Assets/!_Project_Main/3.Scenes/Main Scene _Player.unity
+    path: Assets/!_Project_Main/3.Scenes/Main Scene _Player_09.unity
     guid: 04c88d9183c0ae44cbaefeb918417ee0
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 111cc479780c740c28882d259b7ad05a, type: 2}
