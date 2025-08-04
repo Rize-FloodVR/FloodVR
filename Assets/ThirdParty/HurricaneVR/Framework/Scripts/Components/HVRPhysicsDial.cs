@@ -28,6 +28,7 @@ namespace HurricaneVR.Framework.Components
         public bool DisableGravity = true;
 
         [Header("Joint Limits")]
+
         public bool LimitRotation;
 
         [Tooltip("Minimum Angle about the axis of rotation")]

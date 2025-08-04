@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc30735a6f974fda88a33f70e2b17a3b, type: 3}
-  m_Name: fills
+  m_Name: valve
   m_EditorClassIdentifier: 
   SnappedLeft: 0
   LeftHand:
-    Position: {x: -0.035926692, y: 0.0006736219, z: -0.014600065}
+    Position: {x: -0.0286, y: -0.0348, z: -0.0146}
     Rotation: {x: -0.7071068, y: 0.7071068, z: 0.00000013240823, w: -0.00000013240823}
     Thumb:
       Bones:
@@ -57,8 +57,8 @@ MonoBehaviour:
       - Position: {x: 0.0000000054133125, y: 0.02165052, z: 6.9849193e-10}
         Rotation: {x: -0.17438225, y: 0.008915528, z: -0.014246214, w: 0.9845346}
   RightHand:
-    Position: {x: 0.035926692, y: 0.0006736219, z: -0.014600065}
-    Rotation: {x: 0.7071069, y: 0.70710665, z: 0.00000029502792, w: 0.00000029502783}
+    Position: {x: -0.028599992, y: -0.034990907, z: -0.014600031}
+    Rotation: {x: -0.7071067, y: 0.7071068, z: 0.0000001324082, w: -0.00000013240822}
     Thumb:
       Bones:
       - Position: {x: 0.03259473, y: 0.0518627, z: -0.008608547}

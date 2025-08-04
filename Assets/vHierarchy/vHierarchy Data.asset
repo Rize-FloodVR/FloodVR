@@ -40,8 +40,9 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-3924027509722682562-1369624641
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-919132149155446097-375899597
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-1125620280-0
-        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-919132149155446097-1992001169
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-919132149155446097-1486731384
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-203268225-0
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-10307487711641434339-1486731384
         values:
         - colorIndex: 7
           iconNameOrGuid: 
@@ -55,7 +56,7 @@ MonoBehaviour:
           iconNameOrGuid: 
           isIconRecursive: 0
           isColorRecursive: 0
-        - colorIndex: 2
+        - colorIndex: 3
           iconNameOrGuid: 
           isIconRecursive: 0
           isColorRecursive: 0
@@ -63,6 +64,10 @@ MonoBehaviour:
           iconNameOrGuid: 
           isIconRecursive: 0
           isColorRecursive: 1
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
   bookmarks:
   - _go: {fileID: 0}
     globalId:
