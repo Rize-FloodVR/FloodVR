@@ -38,15 +38,36 @@ MonoBehaviour:
     - goDatas_byGlobalId:
         keys:
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-3924027509722682562-1369624641
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-919132149155446097-375899597
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-1125620280-0
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-919132149155446097-1992001169
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-203268225-0
         values:
         - colorIndex: 7
           iconNameOrGuid: 
           isIconRecursive: 0
           isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 8
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 0
+        - colorIndex: 2
+          iconNameOrGuid: 
+          isIconRecursive: 0
+          isColorRecursive: 1
   bookmarks:
   - _go: {fileID: 0}
     globalId:
       globalObjectIdString: GlobalObjectId_V1-2-6192b2aa20ec3814f889f74b6930bef8-919132149155446097-363272201
   bookmarkedScenePaths:
-  - Assets/HurricaneVR/TechDemo/Scenes/scene_examples.unity
   - Assets/!_Project_Main/3.Scenes/Main Scene _Player.unity
+  - Assets/ThirdParty/HurricaneVR/TechDemo/Scenes/scene_examples.unity
+  - Assets/ThirdParty/HurricaneVR/TechDemo/Scenes/scene_demo.unity
