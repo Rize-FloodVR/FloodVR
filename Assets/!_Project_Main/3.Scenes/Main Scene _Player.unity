@@ -8209,8 +8209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e81e7d71f0767b644892dea478159839, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupPanel: {fileID: 0}
-  messageText: {fileID: 0}
+  popupPanel: {fileID: 187234128}
+  messageText: {fileID: 785536300}
 --- !u!114 &976273028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8223,8 +8223,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f0e80d643476d844a11df85f58002c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  popupPanel: {fileID: 0}
-  messageText: {fileID: 0}
+  popupPanel: {fileID: 436756473}
+  messageText: {fileID: 1629478189}
 --- !u!1001 &994552047
 PrefabInstance:
   m_ObjectHideFlags: 0
