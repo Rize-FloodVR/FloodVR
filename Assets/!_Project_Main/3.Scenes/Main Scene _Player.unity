@@ -13257,14 +13257,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673001295}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 80e9f8f507f775b4aa48c08844126549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Axis: 4
+  Axis: 3
   Steps: 0
-  AngleThreshold: 1
+  AngleThreshold: 0
   MaximumAngle: 90
   StepChanged:
     m_PersistentCalls:
@@ -13353,7 +13353,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   requiredStep: 2
   once: 1
-  trackerUsesNormalized: 1
+  trackerUsesNormalized: 0
   targetValue: 90
   tolerance: 2
 --- !u!4 &1674035448 stripped
