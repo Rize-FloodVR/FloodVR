@@ -1569,7 +1569,19 @@ MonoBehaviour:
   SFXButtonUp: {fileID: 8300000, guid: 0f2a350493cafab4d8f981aacf239c8f, type: 3}
   ButtonDown:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 976273022}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   ButtonUp:
     m_PersistentCalls:
       m_Calls: []
@@ -11295,6 +11307,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8139256362068117277, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1673001298}
+    - targetCorrespondingSourceObject: {fileID: -8139256362068117277, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1673001301}
     - targetCorrespondingSourceObject: {fileID: 5805430319608072418, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 997053593}
@@ -12600,6 +12615,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1673001301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1673001295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b7fd79759aef344ca5219dcbd53c21b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dial: {fileID: 1673001299}
+  completeAngle: 80
+  debugLog: 0
 --- !u!4 &1674035448 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1911740250259677590, guid: 679d3874d7fb0384989d43eb8c65eac7, type: 3}
