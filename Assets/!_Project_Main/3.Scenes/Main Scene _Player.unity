@@ -1347,6 +1347,7 @@ GameObject:
   - component: {fileID: 203268232}
   - component: {fileID: 203268233}
   - component: {fileID: 203268234}
+  - component: {fileID: 203268235}
   m_Layer: 0
   m_Name: Electric Switch
   m_TagString: Untagged
@@ -1508,9 +1509,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 203268235}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   ButtonUp:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 203268235}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   IsPressed: 0
   InvokeButtonDown: 0
   UpdateSpring: 0
@@ -1543,12 +1568,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 0.9626423, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &203268235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 203268225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 0}
+  normalColor: {r: 1, g: 0.99296916, b: 0, a: 1}
+  hoverColor: {r: 0.015686274, g: 1, b: 0.8273333, a: 1}
 --- !u!1 &203844586
 GameObject:
   m_ObjectHideFlags: 0
@@ -3132,7 +3172,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uC624\uBE0C\uC81D\uD2B8 \uC218\uC9D1"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 954e22f163d638a49b02c41f977dedab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 424f80c8614da41b88f6e93b26b8721c, type: 2}
   m_sharedMaterial: {fileID: 5116488065850270704, guid: 954e22f163d638a49b02c41f977dedab, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3198,7 +3238,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 1.8836784, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &400159180
@@ -4122,6 +4162,7 @@ GameObject:
   - component: {fileID: 531426886}
   - component: {fileID: 531426887}
   - component: {fileID: 531426888}
+  - component: {fileID: 531426889}
   m_Layer: 10
   m_Name: Wallet
   m_TagString: Untagged
@@ -4237,10 +4278,34 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 531426889}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 531426889}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Collided:
     m_PersistentCalls:
       m_Calls: []
@@ -4329,7 +4394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.97562706, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -4347,6 +4412,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: "\uC9C0\uAC11"
   id: wallet
+--- !u!114 &531426889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531426882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 531426887}
+  normalColor: {r: 1, g: 0.9676375, b: 0, a: 1}
+  hoverColor: {r: 0, g: 1, b: 0.78752947, a: 1}
 --- !u!1 &558239756
 GameObject:
   m_ObjectHideFlags: 0
@@ -4521,6 +4601,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5559945759241295410, guid: cb8aff9e49677dc4bbe17898109d0fbf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1664944165}
+    - targetCorrespondingSourceObject: {fileID: 5559945759241295410, guid: cb8aff9e49677dc4bbe17898109d0fbf, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1664944166}
     - targetCorrespondingSourceObject: {fileID: 7556786435579607716, guid: cb8aff9e49677dc4bbe17898109d0fbf, type: 3}
       insertIndex: -1
       addedObject: {fileID: 192326586}
@@ -4560,7 +4643,7 @@ RectTransform:
   m_GameObject: {fileID: 567254594}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1973241530}
@@ -4617,6 +4700,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1892658881}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1892658881}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetNormalColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetHoverColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemOutlineController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemOutlineController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 537031679277038367, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -4713,6 +4852,62 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 7bd936c679c249940889082db865d216, type: 2}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1462215689}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1462215689}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetNormalColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetHoverColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemOutlineController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemOutlineController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6447821732530116865, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7070209035670549651, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
       propertyPath: m_Size.y
       value: 1.8649055
@@ -4778,7 +4973,19 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5219532926692173862, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1996947421289528134}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4677023594928071166, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1892658881}
+    - targetCorrespondingSourceObject: {fileID: 4677023594928071166, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1892658882}
+    - targetCorrespondingSourceObject: {fileID: 3879810686969391918, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1462215689}
+    - targetCorrespondingSourceObject: {fileID: 3879810686969391918, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1462215688}
   m_SourcePrefab: {fileID: 100100000, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
 --- !u!1 &594036647
 GameObject:
@@ -5213,6 +5420,75 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679d3874d7fb0384989d43eb8c65eac7, type: 3}
+--- !u!1 &650985552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650985554}
+  - component: {fileID: 650985553}
+  - component: {fileID: 650985555}
+  m_Layer: 0
+  m_Name: FinishTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &650985553
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650985552}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.98, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &650985554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650985552}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.973, y: 0.749, z: -1.722}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &650985555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650985552}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15a26983af4db41bead71867f2b07e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameOverPanel: {fileID: 567254594}
+  playerTag: Player
+  pauseOnShow: 1
 --- !u!1001 &653455280
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5394,10 +5670,34 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657538907}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 657538907}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Collided:
     m_PersistentCalls:
       m_Calls: []
@@ -5496,7 +5796,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.97562706, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -5527,8 +5827,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   outline: {fileID: 657538905}
-  normalColor: {r: 1, g: 0.94946396, b: 0, a: 1}
-  hoverColor: {r: 0.015686274, g: 1, b: 0.65138084, a: 1}
+  normalColor: {r: 1, g: 0.99437773, b: 0, a: 1}
+  hoverColor: {r: 0.015686274, g: 1, b: 0.9025525, a: 1}
 --- !u!4 &660498182 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6140885877344926889, guid: 6974999791dc8804fafee05e319aa932, type: 3}
@@ -6235,6 +6535,7 @@ GameObject:
   - component: {fileID: 748925800}
   - component: {fileID: 748925801}
   - component: {fileID: 748925802}
+  - component: {fileID: 748925803}
   m_Layer: 10
   m_Name: FlashLight
   m_TagString: Untagged
@@ -6367,10 +6668,34 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 748925803}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 748925803}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Collided:
     m_PersistentCalls:
       m_Calls: []
@@ -6442,7 +6767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.97562706, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -6460,6 +6785,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: "\uC190\uC804\uB4F1"
   id: flashlight
+--- !u!114 &748925803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 748925796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 748925801}
+  normalColor: {r: 1, g: 0.9747956, b: 0, a: 1}
+  hoverColor: {r: 0, g: 1, b: 0.9083636, a: 1}
 --- !u!4 &749172041 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 466134531392680144, guid: 7076e8bc57af4294aa0434b988182b41, type: 3}
@@ -7171,6 +7511,7 @@ GameObject:
   - component: {fileID: 892261779}
   - component: {fileID: 892261782}
   - component: {fileID: 892261783}
+  - component: {fileID: 892261784}
   m_Layer: 10
   m_Name: SmartPhone
   m_TagString: Untagged
@@ -7328,10 +7669,34 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892261784}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 892261784}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Collided:
     m_PersistentCalls:
       m_Calls: []
@@ -7378,7 +7743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.97562706, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -7396,6 +7761,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: "\uC2A4\uB9C8\uD2B8\uD3F0"
   id: smartphone
+--- !u!114 &892261784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 892261777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 892261782}
+  normalColor: {r: 1, g: 0.9676375, b: 0, a: 1}
+  hoverColor: {r: 0, g: 1, b: 0.78752947, a: 1}
 --- !u!4 &901462263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4107323084427838127, guid: bcd6e808985540c4886879a7706a0264, type: 3}
@@ -7540,7 +7920,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\uCE68\uC218 \uACBD\uBCF4\uAC00 \uBC1C\uC0DD\uD588\uC2B5\uB2C8\uB2E4!"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 954e22f163d638a49b02c41f977dedab, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 424f80c8614da41b88f6e93b26b8721c, type: 2}
   m_sharedMaterial: {fileID: 2349987532701883749, guid: 666c87dd4b2651343b15e6f2e756a539, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -7625,6 +8005,62 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1592409441}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1592409441}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetNormalColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetHoverColor
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemOutlineController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ItemOutlineController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverExit.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 94085816, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      propertyPath: HoverEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 537031679277038367, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -7790,6 +8226,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8292373846448662540, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1980803294}
+    - targetCorrespondingSourceObject: {fileID: 4677023594928071166, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1592409442}
+    - targetCorrespondingSourceObject: {fileID: 4677023594928071166, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1592409441}
   m_SourcePrefab: {fileID: 100100000, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
 --- !u!1 &924431237
 GameObject:
@@ -8295,7 +8737,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &973028572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8712,12 +9154,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  outlineMode: 0
+  outlineMode: 1
   outlineColor: {r: 0.9851968, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
+--- !u!114 &997053600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 997053576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 0}
+  normalColor: {r: 1, g: 0.99777603, b: 0, a: 1}
+  hoverColor: {r: 0.015686274, g: 1, b: 0.75742394, a: 1}
 --- !u!4 &1000050681 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1157928709923595686, guid: 9c9b0b9371709014197c4cbcb83f2a4c, type: 3}
@@ -10815,6 +11272,10 @@ PrefabInstance:
       propertyPath: DebugKeyboardRecalibrate
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3924027509007222379, guid: 6974999791dc8804fafee05e319aa932, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3924027509007222391, guid: 6974999791dc8804fafee05e319aa932, type: 3}
       propertyPath: SmoothTurnSpeed
       value: 250
@@ -11421,7 +11882,7 @@ RectTransform:
   m_GameObject: {fileID: 1428097327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1281481298}
@@ -11669,6 +12130,44 @@ Transform:
   - {fileID: 1062247660}
   m_Father: {fileID: 1946582967}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1462215684 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3879810686969391918, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+  m_PrefabInstance: {fileID: 576990398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1462215688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462215684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!114 &1462215689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1462215684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 1462215688}
+  normalColor: {r: 1, g: 0.99997795, b: 0, a: 1}
+  hoverColor: {r: 0.015686274, g: 1, b: 0.8266642, a: 1}
 --- !u!4 &1466944195 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3489465288569489589, guid: eaf88a763606bdf46a130acefed57143, type: 3}
@@ -12223,6 +12722,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5805430319608072418, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 997053597}
+    - targetCorrespondingSourceObject: {fileID: 5805430319608072418, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 997053600}
   m_SourcePrefab: {fileID: 100100000, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
 --- !u!1 &1491434657 stripped
 GameObject:
@@ -12758,6 +13260,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3176341215741589026, guid: f7eacdaeb1a3a1042ae6df3deab80745, type: 3}
   m_PrefabInstance: {fileID: 416876835}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1592409437 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4677023594928071166, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+  m_PrefabInstance: {fileID: 915111345}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592409441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592409437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 1592409442}
+  normalColor: {r: 0.95129585, g: 1, b: 0, a: 1}
+  hoverColor: {r: 0.015686274, g: 1, b: 0.8790853, a: 1}
+--- !u!114 &1592409442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592409437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!4 &1594314524 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2703851373854545357, guid: f49a8853b7cfd394d871c239b06c4ca4, type: 3}
@@ -13035,7 +13575,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1652488126
 Transform:
   m_ObjectHideFlags: 0
@@ -13165,10 +13705,34 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1664944166}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1664944166}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Collided:
     m_PersistentCalls:
       m_Calls: []
@@ -13267,7 +13831,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   outlineMode: 1
   outlineColor: {r: 0.97562706, g: 1, b: 0, a: 1}
-  outlineWidth: 3
+  outlineWidth: 4
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
@@ -13285,6 +13849,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayName: "\uC57D\uBCD1"
   id: pillstubered
+--- !u!114 &1664944166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664944159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 1664944164}
+  normalColor: {r: 1, g: 0.9399502, b: 0, a: 1}
+  hoverColor: {r: 0, g: 1, b: 0.92546487, a: 1}
 --- !u!1 &1673001295 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8139256362068117277, guid: f3db2dba4a5324182a06a98be0ee7f1d, type: 3}
@@ -13376,10 +13955,34 @@ MonoBehaviour:
       m_Calls: []
   HoverEnter:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 997053600}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetHoverColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   HoverExit:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 997053600}
+        m_TargetAssemblyTypeName: ItemOutlineController, Assembly-CSharp
+        m_MethodName: SetNormalColor
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Collided:
     m_PersistentCalls:
       m_Calls: []
@@ -14497,6 +15100,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8575909758062007558, guid: 9d18a71358dd26f408908648eb8563ef, type: 3}
   m_PrefabInstance: {fileID: 605833817}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1892658877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4677023594928071166, guid: a8609a2d4e2f58a4abb396fad30796fc, type: 3}
+  m_PrefabInstance: {fileID: 576990398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1892658881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892658877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c737bf66d940734eb877aa7dfaa2624, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outline: {fileID: 1892658882}
+  normalColor: {r: 1, g: 0.99997795, b: 0, a: 1}
+  hoverColor: {r: 0.015686274, g: 1, b: 0.8266642, a: 1}
+--- !u!114 &1892658882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1892658877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 1, g: 1, b: 1, a: 1}
+  outlineWidth: 4
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
 --- !u!1 &1900097158
 GameObject:
   m_ObjectHideFlags: 0
@@ -421577,3 +422218,4 @@ SceneRoots:
   - {fileID: 915111345}
   - {fileID: 1125620281}
   - {fileID: 203268231}
+  - {fileID: 650985554}
