@@ -49,7 +49,7 @@ MonoBehaviour:
   CylinderOrientation: 2
   CylinderRotationOffset: 0
   DisplayTips: 1
-  DisplayAllVertices: 0
+  DisplayAllVertices: 1
   DisplayVerticesColour: {r: 0, g: 0, b: 1, a: 1}
   EnableVertexToolsShortcuts: 1
   GizmoType: 1
@@ -68,7 +68,7 @@ MonoBehaviour:
   CopyParentObjectLayer: 1
   RotatedColliderPivotAtCenter: 0
   rotatedDupeSettings:
-    enabled: 1
+    enabled: 0
     axis: 0
     NumberOfDuplications: 4
     StartRotation: 0
