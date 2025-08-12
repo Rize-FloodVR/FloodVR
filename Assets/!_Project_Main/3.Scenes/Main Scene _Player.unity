@@ -1942,6 +1942,81 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1491434661}
   m_SourcePrefab: {fileID: 100100000, guid: 2d0a5f4d842aa487b89367d29417cc13, type: 3}
+--- !u!1 &232177509
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 232177510}
+  - component: {fileID: 232177512}
+  - component: {fileID: 232177511}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &232177510
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232177509}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10.59}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1383246653}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0.41, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &232177511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232177509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &232177512
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 232177509}
+  m_CullTransparentMesh: 1
 --- !u!1 &246240155 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5225926816107344212, guid: 49e5ba3b5a4bbbb41b880fb01d99308f, type: 3}
@@ -4106,6 +4181,9 @@ MonoBehaviour:
   waterBarFillImage: {fileID: 489828077}
   depthText: {fileID: 1711217103}
   gameOverPanel: {fileID: 1428097327}
+  screenDimmer: {fileID: 232177511}
+  dimTargetAlpha: 0.75
+  dimFadeTime: 0.5
 --- !u!114 &489828077
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9000,8 +9078,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fc3307c0bb14ba47b36f7bd4a6d21e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  riseHeight: 1.35
-  riseDuration: 60
+  riseHeight: 0.5
+  riseDuration: 180
   waterUI: {fileID: 489828076}
 --- !u!114 &976273030
 MonoBehaviour:
@@ -9421,7 +9499,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   riseHeight: 0.5
-  riseDuration: 90
+  riseDuration: 180
   waterUI: {fileID: 489828076}
 --- !u!4 &1014168893 stripped
 Transform:
@@ -11887,6 +11965,7 @@ RectTransform:
   - {fileID: 1711217102}
   - {fileID: 1039196164}
   - {fileID: 1900097159}
+  - {fileID: 232177510}
   m_Father: {fileID: 720787653}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}

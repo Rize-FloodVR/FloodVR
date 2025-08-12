@@ -28,7 +28,7 @@ public class InventoryManager : MonoBehaviour
             var progress = totalNeeded > 0 ? $" ({collected.Count}/{totalNeeded})" : "";
             toast.Show($"{item.displayName}이 수집되었습니다{progress}");
 
-            if (totalNeeded > 0 && collected.Count >= totalNeeded && MissionStepManager.Instance.CurrentStep == MissionStep.Electric)
+            if (totalNeeded > 0 && collected.Count >= totalNeeded && MissionStepManager.Instance.CurrentStep == MissionStep.Escape)
                 MissionStepManager.Instance.NextStep();
         }
         return true;
