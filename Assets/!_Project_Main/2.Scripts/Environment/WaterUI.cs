@@ -1,73 +1,38 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Collections;
 
 public class WaterUI : MonoBehaviour
 {
     public Image waterBarFillImage;
-    public TextMeshProUGUI depthText;
-    public GameObject gameOverPanel;
+    public TextMeshProUGUI depthText; // (선택) 수심 텍스트도 표시할 경우
+    public GameObject gameOverPanel; // 게임오버 UI 패널
 
-    [Header("Screen Dim")]
-    public Image screenDimmer;          // 풀  크         譴   
-    public float dimTargetAlpha = 0.75f;
-    public float dimFadeTime = 0.5f;    //      溝 
-
-    bool gameOverShown;
-
+    // 수심 비율(0~1) 받아서 UI에 반영
     public void SetWaterLevel(float ratio, float height = -1f)
     {
-        if (waterBarFillImage) waterBarFillImage.fillAmount = Mathf.Clamp01(ratio);
+        if (waterBarFillImage != null)
+            waterBarFillImage.fillAmount = Mathf.Clamp01(ratio);
 
-        if (depthText && height >= 0f)
+        if (depthText != null && height >= 0f)
         {
-            depthText.text = $"{height * 100f:F0} cm";
-
-            //   확   0.5f ==  呪낫           鵑 (>=)     체크
-            if (!gameOverShown && height >= 0.5f)
+            depthText.text = $"{height * 100:F0} cm";
+            if (height == 0.5f)
             {
-                depthText.color = Color.red;
-                TriggerGameOver();
+                depthText.color = Color.red;  // 빨간색으로 변경
+                if (gameOverPanel != null && !gameOverPanel.activeSelf)
+                {
+                    gameOverPanel.SetActive(true); // 게임오버 패널 표시
+                    //Time.timeScale = 0f; // 게임 멈춤(선택)
+                }
             }
-            else if (!gameOverShown)
+            
+            else
             {
-                depthText.color = Color.white;
+                depthText.color = Color.white;  // 기본 흰색
             }
         }
-    }
+           
 
-    void TriggerGameOver()
-    {
-        if (gameOverShown) return;
-        gameOverShown = true;
-
-        // 화      
-        if (screenDimmer) StartCoroutine(FadeDimmer(screenDimmer, dimTargetAlpha, dimFadeTime));
-
-        if (gameOverPanel && !gameOverPanel.activeSelf)
-            gameOverPanel.SetActive(true);
-
-        //           (UI    絹        溝                   )
-        Time.timeScale = 0f;
-
-        // (    ) 효          煞        :
-        AudioListener.pause = true;
-    }
-
-    IEnumerator FadeDimmer(Image img, float target, float time)
-    {
-        img.raycastTarget = true; //  韜         치        false
-        Color c = img.color;
-        float start = c.a;
-        float t = 0f;
-
-        while (t < 1f)
-        {
-            t += Time.unscaledDeltaTime / time;
-            c.a = Mathf.Lerp(start, target, t);
-            img.color = c;
-            yield return null;
-        }
     }
 }
