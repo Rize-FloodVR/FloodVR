@@ -3524,7 +3524,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &741114102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4868,7 +4868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &973028572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6447,6 +6447,9 @@ MonoBehaviour:
   waterBarFillImage: {fileID: 1283434781}
   depthText: {fileID: 1004069756}
   gameOverPanel: {fileID: 0}
+  screenDimmer: {fileID: 0}
+  dimTargetAlpha: 0.75
+  dimFadeTime: 0.5
 --- !u!114 &1283434781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7830,7 +7833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1652488126
 Transform:
   m_ObjectHideFlags: 0
@@ -8976,6 +8979,9 @@ MonoBehaviour:
   waterBarFillImage: {fileID: 1893787351}
   depthText: {fileID: 356819309}
   gameOverPanel: {fileID: 0}
+  screenDimmer: {fileID: 0}
+  dimTargetAlpha: 0.75
+  dimFadeTime: 0.5
 --- !u!114 &1893787351
 MonoBehaviour:
   m_ObjectHideFlags: 0

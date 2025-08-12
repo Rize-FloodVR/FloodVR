@@ -18,6 +18,7 @@ public class MissionStepManager : MonoBehaviour
     [Header("Voice (2D AudioSource ����)")]
     public AudioSource voice;
     public AudioClip electricClip, gasClip, collectClip, escapeClip;
+    public bool allCompleted = false;
 
     void Awake() { if (Instance == null) Instance = this; else Destroy(gameObject); }
     void Start() { OnStepChanged(); }
@@ -49,6 +50,8 @@ public class MissionStepManager : MonoBehaviour
             case MissionStep.Escape:
                 MissionManager.Instance.ShowPopup("비상 물품 수집 완료!\n현관문으로 탈출하세요.", 5f);
                 Play(escapeClip);
+                allCompleted = true;
+                Debug.Log("모든 미션을 완료했습니다!");
                 break;
         }
     }
