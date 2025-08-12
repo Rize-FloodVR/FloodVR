@@ -47,6 +47,8 @@ MonoBehaviour:
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-537032989563475390-576990398
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-537032989563475390-915111345
         - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-537032989563475390-29297715
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-973028571-0
+        - globalObjectIdString: GlobalObjectId_V1-2-04c88d9183c0ae44cbaefeb918417ee0-1652488125-0
         values:
         - colorIndex: 7
           iconNameOrGuid: 
@@ -84,54 +86,6 @@ MonoBehaviour:
           iconNameOrGuid: 
           isIconRecursive: 0
           isColorRecursive: 1
-    - goDatas_byGlobalId:
-        keys:
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-3924027509722682562-1369624641
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-919132149155446097-375899597
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-1125620280-0
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-919132149155446097-1486731384
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-203268225-0
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-10307487711641434339-1486731384
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-537032989563475390-576990398
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-537032989563475390-915111345
-        - globalObjectIdString: GlobalObjectId_V1-2-1d5ae3604828a2949bf7abd611926090-537032989563475390-29297715
-        values:
-        - colorIndex: 7
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 2
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 8
-          iconNameOrGuid: Folder Icon
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 3
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 2
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 2
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 6
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 6
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
-        - colorIndex: 6
-          iconNameOrGuid: 
-          isIconRecursive: 0
-          isColorRecursive: 0
   bookmarks:
   - _go: {fileID: 0}
     globalId:
