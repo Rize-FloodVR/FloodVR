@@ -5,6 +5,7 @@ using HurricaneVR.Framework.Core.Utils;
 using HurricaneVR.Framework.Shared;
 using UnityEngine;
 
+
 namespace HurricaneVR.Framework.Components
 {
     /// <summary>
@@ -16,7 +17,8 @@ namespace HurricaneVR.Framework.Components
     [RequireComponent(typeof(Rigidbody))]
     public class HVRPhysicsDoor : MonoBehaviour
     {
-        [Header("Settings")] [Tooltip("Local axis of rotation")]
+        [Header("Settings")]
+        [Tooltip("Local axis of rotation")]
         public HVRAxis Axis;
 
         [Tooltip("Door's rigidbody mass.")] public float Mass = 10f;
@@ -29,7 +31,8 @@ namespace HurricaneVR.Framework.Components
         [Tooltip("Rigidbody to connect the joint to")]
         public Rigidbody ConnectedBody;
 
-        [Header("Door Closing Settings")] [Tooltip("Angle threshold to determine if the door is closed or not.")]
+        [Header("Door Closing Settings")]
+        [Tooltip("Angle threshold to determine if the door is closed or not.")]
         public float CloseAngle = 5f;
 
         [Tooltip("The door will automatically shut over this amount of time once it's close enough to be closed.")]
@@ -38,7 +41,8 @@ namespace HurricaneVR.Framework.Components
         [Tooltip("How long the door angle must be below 'CloseAngle' to become closed.")]
         public float CloseDetectionTime = .5f;
 
-        [Header("SFX")] [Tooltip("Angle threshold to play opening and closing sound effects.")]
+        [Header("SFX")]
+        [Tooltip("Angle threshold to play opening and closing sound effects.")]
         public float SFXThresholdAngle = 2.5f;
 
         public float SFXResetThreshold = 1f;
@@ -51,7 +55,8 @@ namespace HurricaneVR.Framework.Components
         [Tooltip("Optional transform to define the position of the open / close sound fx.")]
         public Transform SFXPosition;
 
-        [Header("Handle")] [Tooltip("If true the handle must rotate beyond 'HandThreshold' amount of degrees before it will unlatch, if false the door will not latch automatically.")]
+        [Header("Handle")]
+        [Tooltip("If true the handle must rotate beyond 'HandThreshold' amount of degrees before it will unlatch, if false the door will not latch automatically.")]
         public bool HandleRequiresRotation;
 
         [Tooltip("Required handle rotation to unlatch the door.")]
@@ -84,7 +89,8 @@ namespace HurricaneVR.Framework.Components
         [Tooltip("Maximum rotation about the axis of rotation")]
         public float MaxAngle;
 
-        [Header("Joint Settings")] [Tooltip("Angular Damper of the door hinge.")]
+        [Header("Joint Settings")]
+        [Tooltip("Angular Damper of the door hinge.")]
         public float Damper = 10;
 
         [Tooltip("Angular Spring that will return the door to it's starting rotation")]
