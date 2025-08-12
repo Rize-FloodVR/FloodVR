@@ -55,6 +55,7 @@ namespace HurricaneVR.Framework.Components
         public bool IsPressed = false;
         public bool InvokeButtonDown;
         public bool UpdateSpring;
+        public bool isSwitchOff = false;
 
         public Rigidbody Rigidbody { get; private set; }
 
@@ -140,6 +141,29 @@ namespace HurricaneVR.Framework.Components
             }
 
             var distance = Mathf.Abs(GetDistance());
+            
+            // End Position에 도달했는지 체크
+            float endDistance = Vector3.Distance(transform.localPosition, EndPosition);
+            if (endDistance <= 0.01f && !isSwitchOff)
+            {
+                isSwitchOff = true;
+                Debug.Log("Switch is off");
+                // End Position에 도달하면 더 이상 움직이지 못하도록 조인트 제거
+                if (_joint != null)
+                {
+                    DestroyImmediate(_joint);
+                    _joint = null;
+                }
+                if (_limitJoint != null)
+                {
+                    DestroyImmediate(_limitJoint);
+                    _limitJoint = null;
+                }
+                // 위치를 End Position으로 고정
+                transform.localPosition = EndPosition;
+                Rigidbody.isKinematic = true;
+                return;
+            }
 
             if (!IsPressed && distance >= DownThreshold || InvokeButtonDown)
             {
