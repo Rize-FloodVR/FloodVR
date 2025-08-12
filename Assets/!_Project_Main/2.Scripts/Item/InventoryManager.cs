@@ -8,7 +8,7 @@ public class InventoryManager : MonoBehaviour
     [Header("Optional")]
     public UIToast toast;
 
-    [Tooltip("ÃÑ ¼öÁýÇØ¾ß ÇÏ´Â °³¼ö(Ç¥½Ã¿ë)")]
+    [Tooltip("        Ø¾   Ï´      (Ç¥ Ã¿ )")]
     public int totalNeeded = 5;
 
     private HashSet<string> collected = new HashSet<string>();
@@ -19,16 +19,16 @@ public class InventoryManager : MonoBehaviour
     {
         if (item == null || string.IsNullOrEmpty(item.id)) return false;
 
-        // ÀÌ¹Ì ¼öÁýµÆÀ¸¸é ¹«½Ã
+        //  Ì¹                 
         if (!collected.Add(item.id)) return false;
 
-        // Åä½ºÆ® ¹× ÁøÇàµµ Ç¥½Ã
+        //  ä½ºÆ®       àµµ Ç¥  
         if (toast)
         {
             var progress = totalNeeded > 0 ? $" ({collected.Count}/{totalNeeded})" : "";
-            toast.Show($"{item.displayName}ÀÌ ¼öÁýµÇ¾ú½À´Ï´Ù{progress}");
+            toast.Show($"{item.displayName}        Ç¾    Ï´ {progress}");
 
-            if (totalNeeded > 0 && collected.Count >= totalNeeded && MissionStepManager.Instance.CurrentStep == MissionStep.Electric)
+            if (totalNeeded > 0 && collected.Count >= totalNeeded && MissionStepManager.Instance.CurrentStep == MissionStep.Escape)
                 MissionStepManager.Instance.NextStep();
         }
         return true;
