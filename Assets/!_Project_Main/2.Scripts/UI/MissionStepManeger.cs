@@ -2,12 +2,12 @@ using UnityEngine;
 
 public enum MissionStep
 {
-    Start,          //½ÃÀÛ
-    Electric,     // Àü±â Â÷´Ü
-    Gas,          // °¡½º Â÷´Ü
-    Collect,      // ¿ÀºêÁ§Æ® ¼öÁı
-    Escape,       // ¹® Å»Ãâ
-    Complete      // ¿Ï·á
+    Start,          //ï¿½ï¿½ï¿½ï¿½
+    Electric,     // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    Gas,          // ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
+    Collect,      // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½ï¿½ï¿½ï¿½
+    Escape,       // ï¿½ï¿½ Å»ï¿½ï¿½
+    Complete      // ï¿½Ï·ï¿½
 }
 
 public class MissionStepManager : MonoBehaviour
@@ -15,7 +15,7 @@ public class MissionStepManager : MonoBehaviour
     public static MissionStepManager Instance { get; private set; }
     public MissionStep CurrentStep { get; private set; } = MissionStep.Electric;
 
-    [Header("Voice (2D AudioSource ±ÇÀå)")]
+    [Header("Voice (2D AudioSource ï¿½ï¿½ï¿½ï¿½)")]
     public AudioSource voice;
     public AudioClip electricClip, gasClip, collectClip, escapeClip;
 
@@ -32,22 +32,22 @@ public class MissionStepManager : MonoBehaviour
         switch (CurrentStep)
         {
             case MissionStep.Electric:
-                MissionManager.Instance.ShowPopup("Ä§¼ö °æº¸°¡ ¹ß»ıÇß½À´Ï´Ù.\n°¨Àü À§Çè °¨Áö! Àü·Â Â÷´ÜÀÌ ÇÊ¿äÇÕ´Ï´Ù.", 5f);
+                MissionManager.Instance.ShowPopup("ì¹¨ìˆ˜ ê²½ë³´ê°€ ë°œìƒí–ˆìŠµë‹ˆë‹¤.\nê°ì „ ìœ„í—˜ ê°ì§€! ì „ë ¥ ì°¨ë‹¨ì´ í•„ìš”í•©ë‹ˆë‹¤.", 5f);
                 Play(electricClip);
                 break;
 
             case MissionStep.Gas:
-                MissionManager.Instance.ShowPopup("Àü±â Â÷´Ü ¿Ï·á!\n°¡½º ´©Ãâ À§Çè! °¡½º¹ëºê¸¦ Â÷´ÜÇÏ¼¼¿ä.", 5f);
+                MissionManager.Instance.ShowPopup("ì „ê¸° ì°¨ë‹¨ ì™„ë£Œ!\nê°€ìŠ¤ ëˆ„ì¶œ ìœ„í—˜! ê°€ìŠ¤ë°¸ë¸Œë¥¼ ì°¨ë‹¨í•˜ì„¸ìš”.", 5f);
                 Play(gasClip);
                 break;
 
             case MissionStep.Collect:
-                MissionManager.Instance.ShowPopup("°¡½º Â÷´Ü ¿Ï·á!\nºñ»ó ¹°Ç°À» ¼öÁıÇÏ¼¼¿ä.", 5f);
+                MissionManager.Instance.ShowPopup("ê°€ìŠ¤ ì°¨ë‹¨ ì™„ë£Œ!\në¹„ìƒ ë¬¼í’ˆì„ ìˆ˜ì§‘í•˜ì„¸ìš”.", 5f);
                 Play(collectClip);
                 break;
 
             case MissionStep.Escape:
-                MissionManager.Instance.ShowPopup("ºñ»ó ¹°Ç° ¼öÁı ¿Ï·á!\nÇö°ü¹®À¸·Î Å»ÃâÇÏ¼¼¿ä.", 5f);
+                MissionManager.Instance.ShowPopup("ë¹„ìƒ ë¬¼í’ˆ ìˆ˜ì§‘ ì™„ë£Œ!\ní˜„ê´€ë¬¸ìœ¼ë¡œ íƒˆì¶œí•˜ì„¸ìš”.", 5f);
                 Play(escapeClip);
                 break;
         }
@@ -58,10 +58,10 @@ public class MissionStepManager : MonoBehaviour
         if (voice && clip) voice.PlayOneShot(clip);
     }
 }
-/* ¿¹: Àü±â Â÷´Ü ¼º°ø ½Ã
+/* ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
 if (MissionStepManager.Instance.CurrentStep == MissionStep.Electric)
     MissionStepManager.Instance.NextStep();
 
-¼öÁı ¿ÀºêÁ§Æ® 4°³ ¸ğµÎ ¸ğ¾ÒÀ» ¶§µµ °°Àº ¹æ½ÄÀ¸·Î
+ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® 4ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 if (MissionStepManager.Instance.CurrentStep == MissionStep.Collect && collectedCount == 4)
     MissionStepManager.Instance.NextStep();*/
