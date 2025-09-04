@@ -2,12 +2,12 @@ using UnityEngine;
 
 public enum MissionStep
 {
-    Start,          //����
-    Electric,     // ���� ����
-    Gas,          // ���� ����
-    Collect,      // ������Ʈ ����
-    Escape,       // �� Ż��
-    Complete      // �Ϸ�
+    Start,        // 시작
+    Electric,     // 전기 차단 차례
+    Gas,          // 전기 차단 완료, 가스 차단 순서
+    Collect,      // 가스 차단 완료, 오브젝트 수집 순서
+    Escape,       // 수집 완료, 탈출 순서
+    Complete      // 탈출
 }
 
 public class MissionStepManager : MonoBehaviour
@@ -61,10 +61,3 @@ public class MissionStepManager : MonoBehaviour
         if (voice && clip) voice.PlayOneShot(clip);
     }
 }
-/* ��: ���� ���� ���� ��
-if (MissionStepManager.Instance.CurrentStep == MissionStep.Electric)
-    MissionStepManager.Instance.NextStep();
-
-���� ������Ʈ 4�� ��� ����� ���� ���� �������
-if (MissionStepManager.Instance.CurrentStep == MissionStep.Collect && collectedCount == 4)
-    MissionStepManager.Instance.NextStep();*/
