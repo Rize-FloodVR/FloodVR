@@ -10,9 +10,9 @@ public class WaterUI : MonoBehaviour
     public GameObject gameOverPanel;
 
     [Header("Screen Dim")]
-    public Image screenDimmer;          // Ǯ  ũ         ̹   
+    public Image screenDimmer;          
     public float dimTargetAlpha = 0.75f;
-    public float dimFadeTime = 0.5f;    //      ϵ 
+    public float dimFadeTime = 0.5f;  
 
     bool gameOverShown;
 
@@ -24,7 +24,7 @@ public class WaterUI : MonoBehaviour
         {
             depthText.text = $"{height * 100f:F0} cm";
 
-            //   Ȯ   0.5f ==  񱳴           ̻ (>=)     üũ
+  
             if (!gameOverShown && height == 0.5f)
             {
                 depthText.color = Color.red;
@@ -42,22 +42,22 @@ public class WaterUI : MonoBehaviour
         if (gameOverShown) return;
         gameOverShown = true;
 
-        // ȭ      
+        // 화면 디밍
         if (screenDimmer) StartCoroutine(FadeDimmer(screenDimmer, dimTargetAlpha, dimFadeTime));
 
         if (gameOverPanel && !gameOverPanel.activeSelf)
             gameOverPanel.SetActive(true);
 
-        //           (UI    ̵        ϵ                   )
+        // 게임 종료
         Time.timeScale = 0f;
 
-        // (    ) ȿ          ߰        :
+        // 오디오 중지
         AudioListener.pause = true;
     }
 
     IEnumerator FadeDimmer(Image img, float target, float time)
     {
-        img.raycastTarget = true; //  Է         ġ        false
+        img.raycastTarget = true;
         Color c = img.color;
         float start = c.a;
         float t = 0f;
